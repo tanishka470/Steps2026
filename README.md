@@ -2,4 +2,4 @@
 STEP Website
 
 #Run
-<a href = "step2024.github.io" >Check Website Here</a>
+<a href ="https://step2024.github.io" target="blank">Check Website Here</a>
