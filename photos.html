@@ -94,7 +94,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>STEPS 2024</h1>
+        <h1>STEPS 2025</h1>
       </a>
 
       <!-- Nav Menu -->
@@ -102,6 +102,7 @@
         <ul>
           <li><a href="index.html"   >Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="tracks.html">Tracks</a></li>
           <li><a href="photos.html" class="active">Photos</a></li>
           <li><a href="committee.html">Committee</a></li>
           <li><a href="speakers.html">Speakers</a></li>
@@ -152,38 +153,29 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
             </div>
-            <!-- <div class="carousel-inner">
+            <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./files/img/TriboIndia/IMG_0098.JPG" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./files/img/TriboIndia/IMG_0147.JPG" class="d-block w-100" alt="...">
+                <img src="./files/img/TriboIndia/IMG_0052.JPG" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./files/img/TriboIndia/IMG_0183.JPG" class="d-block w-100" alt="...">
+                <img src="./files/img/TriboIndia/IMG_0058.JPG" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./files/img/TriboIndia/IMG_0257.JPG" class="d-block w-100" alt="...">
+                <img src="./files/img/TriboIndia/IMG_0213.JPG" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="./files/img/TriboIndia/IMG_0294.JPG" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./files/img/TriboIndia/IMG_0848.JPG" class="d-block w-100" alt="...">
+                <img src="./files/img/TriboIndia/IMG_0931.JPG" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./files/img/TriboIndia/IMG_0869.JPG" class="d-block w-100" alt="...">
+                <img src="./files/img/TriboIndia/IMG_1000.JPG" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
-                <img src="./files/img/TriboIndia/IMG_1428.JPG" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./files/img/TriboIndia/IMG_1733.JPG" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./files/img/TriboIndia/IMG_1855.JPG" class="d-block w-100" alt="...">
-              </div>
-            </div> -->
+            </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -200,7 +192,7 @@
         </div>
 
         <!-- Photo Grid -->
-        <!-- <div class="row" id="photoGrid"></div> -->
+        <div class="row" id="photoGrid"></div>
       </div>
 
     </section><!-- End Contact Section -->
@@ -214,7 +206,7 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span>STEPS 2024</span>
+            <span>STEPS 2025</span>
           </a>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus accusamus ipsa illo nemo nostrum. Quod accusantium libero explicabo? Sapiente, cum velit magni quae dolorem culpa illo harum expedita doloribus ratione!
@@ -241,6 +233,7 @@
           <h4 style="opacity: 0;">.</h4>
           <ul>
             <li><a href="abstract.html">Abstract</a></li>
+            <li><a href="tracks.html">Tracks</a></li>
             <!-- <li><a href="venue.html">Venue</a></li>
             <li><a href="accommodation.html">Accommodation</a></li> -->
             <li><a href="contact.html">Contact Us</a></li>
@@ -254,7 +247,7 @@
           <p>Hazratbal Srinagar</p>
           <p>Jammu and Kashmir</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+91 0194 244 4444</span></p>
-          <p><strong>Email:</strong> <span>steps2024@nitsri.ac.in</span></p>
+          <p><strong>Email:</strong> <span>steps2025@nitsri.ac.in</span></p>
         </div>
 
       </div>
@@ -286,7 +279,7 @@
       const photoGrid = document.getElementById("photoGrid");
 
       // Generate image filenames from 1.JPG to 89.JPG
-      const imageFilenames = Array.from({ length: 89 }, (_, index) => `${index + 1}.JPG`);
+      const imageFilenames = Array.from({ length: 45 }, (_, index) => `${index + 1}.JPG`);
 
       // Function to load and display a batch of images
       const loadImages = (start, end) => {
@@ -297,7 +290,7 @@
               const image = document.createElement('img');
               image.src = `./assets/photos/${imageFilenames[i]}`;
               image.alt = 'Photo';
-
+              
               column.appendChild(image);
               photoGrid.appendChild(column);
           }
