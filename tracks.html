@@ -1,204 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Tracks</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Tracks</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest" />
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-<link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Append
   * Updated: Jun 20 2023 with Bootstrap v5.3.0
   * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <style>
-    body{
-      position: relative;
-    }
-.important-doc .doc-container {
-  height: 100vh;
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-}
-.important-doc .doc-container img{
-  height: 100%;
-}
-.banner {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 80vh;
-  background-color: #fff; /* Set your desired background color */
-  overflow: hidden;       /* Hide any content that might extend beyond the banner */
-}
+    <style>
+      body {
+        position: relative;
+      }
+      .important-doc .doc-container {
+        height: 100vh;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+      }
+      .important-doc .doc-container img {
+        height: 100%;
+      }
+      .banner {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 80vh;
+        background-color: #fff; /* Set your desired background color */
+        overflow: hidden; /* Hide any content that might extend beyond the banner */
+      }
 
-.banner {
-  width: 100%;        /* Make sure the image occupies the entire banner width */
-  height: auto;       /* Maintain the aspect ratio */
-}
-#close-modal {
-  position: absolute;
-  top: 25px;
-  right: 50px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-@media screen and (max-width:1150px) {
-  .important-doc .doc-container img{
-  height: 80%;
-}
-}
-@media screen and (max-width:700px) {
-  .important-doc .doc-container img{
-  height: 55%;
-}
-#close-modal{
-  font-size: 20px;
-}
-}
-table thead{
-    font-size:30px;
-}
-table tbody tr th{
-    font-size:25px;
-}
+      .banner {
+        width: 100%; /* Make sure the image occupies the entire banner width */
+        height: auto; /* Maintain the aspect ratio */
+      }
+      #close-modal {
+        position: absolute;
+        top: 25px;
+        right: 50px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      @media screen and (max-width: 1150px) {
+        .important-doc .doc-container img {
+          height: 80%;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .important-doc .doc-container img {
+          height: 55%;
+        }
+        #close-modal {
+          font-size: 20px;
+        }
+      }
+      table thead {
+        font-size: 30px;
+      }
+      table tbody tr th {
+        font-size: 25px;
+      }
+    </style>
+  </head>
 
-  </style>
-</head>
-
-<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
-  <!-- <div class="important-doc">
+  <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+    <!-- <div class="important-doc">
     <div class="doc-container">
       <img src="./assets/img/homeImpDoc.png" alt="Important Document">
       <button id="close-modal">Close</button>
     </div>
   </div> -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1>STEPS 2025</h1>
+        </a>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>STEPS 2025</h1>
-      </a>
+        <!-- Nav Menu -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tracks.html" class="active">Tracks</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="abstract.html">Abstract</a></li>
 
-      <!-- Nav Menu -->
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html"   >Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="tracks.html" class="active">Tracks</a></li>
-          <li><a href="photos.html">Photos</a></li>
-          <li><a href="committee.html">Committee</a></li>
-          <li><a href="speakers.html">Speakers</a></li>
-          <li><a href="abstract.html">Abstract</a></li>
-          
-          <!-- <li><a href="publications.html">Publications</a></li>
+            <!-- <li><a href="publications.html">Publications</a></li>
           <li><a href="technical-exhibition.html" >Exhibition</a></li>
           <li><a href="course-schedule.html">Conference Schedule</a></li>
           <li><a href="preconfrence.html">Preconference Course</a></li>
           <li><a href="venue.html">Venue</a></li>
           <li><a href="sponsorship.html">Sponsorship</a></li> -->
-          <li><a href="registration.html" >Registration</a></li>
-          <!-- <li><a href="accommodation.html">Accommodation</a></li> -->
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+            <li><a href="registration.html">Registration</a></li>
+            <!-- <li><a href="accommodation.html">Accommodation</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
 
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav><!-- End Nav Menu -->
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+        <!-- End Nav Menu -->
 
-      <span></span>
+        <span></span>
+      </div>
+    </header>
+    <!-- End Header -->
 
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <section id="about" class="about">
-      <div class="container mt-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-xl-center gy-5">
-          <div class="text-wrap mr-5" style="margin-bottom: -2%;">
-            <div class="text-left section-title" data-aos="fade-up" style="padding-top: 2%;">
-              <h2 style="margin-left:-80%">Tracks</h2>
+    <main id="main">
+      <section id="about" class="about">
+        <div class="container mt-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-xl-center gy-5">
+            <div class="text-wrap mr-5" style="margin-bottom: -2%">
+              <div
+                class="text-left section-title"
+                data-aos="fade-up"
+                style="padding-top: 2%"
+              >
+                <h2 style="margin-left: -80%">Tracks</h2>
+              </div>
+              <div class="text-left section-title text-wrap mx-4">
+                <h3 style="text-align: left">
+                  The conference seeks papers in all aspects of Electrical
+                  Power, Green Energy, Power Electronic, and Control Systems.
+                  Specifically, it covers (but not limited to) the following
+                  Topics:
+                </h3>
+              </div>
+              <ul style="margin-top: -2%" class="text-wrap mx-4">
+                <li>
+                  <h4>Green Energy Technologies and energy storage systems.</h4>
+                </li>
+                <li>
+                  <h4>Plug-in and Hybrid electric vehicles.</h4>
+                </li>
+                <li>
+                  <h4>Smart Grid and micro-grid Technologies.</h4>
+                </li>
+                <li><h4>Power Electronics and Industrial power drives.</h4></li>
+                <li><h4>Industrial Electronics.</h4></li>
+                <li><h4>Modern Control system and Intelligent Systems.</h4></li>
+                <li><h4>Other related Topics.</h4></li>
+              </ul>
             </div>
-            <div class="text-left section-title text-wrap mx-4">
-                <h3 style="text-align:left">The conference seeks papers in all aspects of Electrical Power, Green
-                    Energy, Power Electronic, and Control Systems. Specifically, it covers (but
-                    not limited to) the following Topics:
-                    </h3>
+          </div>
+          <section id="contact" class="contact">
+            <div class="container section-title mt-5" data-aos="fade-up">
+              <h3 style="text-align: left">
+                <b>Area to be covered: </b> <br />
+                This conference is covering diverse areas of Electrical
+                Engineering, and specially areas under the Power System, Power
+                Electronics and Control Systems streams. However, conference is
+                inviting papers on following Topics (But not limited to):
+              </h3>
             </div>
-            <ul style="margin-top: -2%;" class="text-wrap mx-4">
-              <li>
-                <h4> Green Energy Technologies and energy storage systems. </h4>
-              </li>
-              <li>
-                <h4> Plug-in and Hybrid electric vehicles. </h4>
-              </li>
-              <li>
-                <h4> Smart Grid and micro-grid Technologies.</h4>
-              </li>
-              <li><h4>Power Electronics and Industrial power drives.</h4></li>
-              <li><h4>Industrial Electronics.</h4></li>
-              <li><h4>Modern Control system and Intelligent Systems.</h4></li>
-              <li><h4>Other related Topics.</h4></li>
-            </ul>
-          </div>
-        </div>
-        <section id="contact" class="contact">
-          <div class="container section-title mt-5" data-aos="fade-up">
-            <h3 style="text-align:left"><b>Area to be covered: </b> <br> This conference is covering diverse areas of Electrical
-                Engineering, and specially areas under the Power System, Power Electronics
-                and Control Systems streams.
-                However, conference is inviting papers on following Topics (But not limited
-                to):</h3>
-          </div>
-    
-          <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
-            <div class="row gy-4">
-    
-              <div class="col-lg-12">
-                <div class="row">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-12">
+                  <div class="row">
                     <table class="table table-striped">
                       <thead>
                         <tr>
@@ -209,63 +243,104 @@ table tbody tr th{
                       </thead>
                       <tbody id="table-content">
                         <tr>
-                          <th class="fw-normal">Optimal operation of thermal power plant with renewable energy sources</th>
+                          <th class="fw-normal">
+                            Optimal operation of thermal power plant with
+                            renewable energy sources
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Scheduling of green energy technologies</th>
+                          <th class="fw-normal">
+                            Scheduling of green energy technologies
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Integration of electric vehicle charging station in distribution system </th>
+                          <th class="fw-normal">
+                            Integration of electric vehicle charging station in
+                            distribution system
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Stability, reliability, and security analysis of power grid with EVs and renewable energy sources</th>
+                          <th class="fw-normal">
+                            Stability, reliability, and security analysis of
+                            power grid with EVs and renewable energy sources
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Operation and planning of HVDC transmission system</th>
+                          <th class="fw-normal">
+                            Operation and planning of HVDC transmission system
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Modelling and simulation of large interconnected modern network</th>
+                          <th class="fw-normal">
+                            Modelling and simulation of large interconnected
+                            modern network
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Reactive power management and ancillary services </th>
+                          <th class="fw-normal">
+                            Reactive power management and ancillary services
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Energy management of micro-grid and nano-grid </th>
+                          <th class="fw-normal">
+                            Energy management of micro-grid and nano-grid
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Energy management of integrated distributed energy resources</th>
+                          <th class="fw-normal">
+                            Energy management of integrated distributed energy
+                            resources
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Building energy management</th>
+                          <th class="fw-normal">Building energy management</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Economic study of power system </th>
+                          <th class="fw-normal">
+                            Economic study of power system
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Optimization of power system resources</th>
+                          <th class="fw-normal">
+                            Optimization of power system resources
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">E-mobility and electric vehicles and its impact on environment </th>
+                          <th class="fw-normal">
+                            E-mobility and electric vehicles and its impact on
+                            environment
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Operation of energy storage with RESs and centralized grid</th>
+                          <th class="fw-normal">
+                            Operation of energy storage with RESs and
+                            centralized grid
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Hydrogen energy storage and its application in power system operation                          </th>
+                          <th class="fw-normal">
+                            Hydrogen energy storage and its application in power
+                            system operation
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Smart grid operations, energy management and protection</th>
+                          <th class="fw-normal">
+                            Smart grid operations, energy management and
+                            protection
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Resiliency of power grid</th>
+                          <th class="fw-normal">Resiliency of power grid</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Deregulation and electricity market</th>
+                          <th class="fw-normal">
+                            Deregulation and electricity market
+                          </th>
                         </tr>
                       </tbody>
                     </table>
-                    </div>
-                    <div class="row">
+                  </div>
+                  <div class="row">
                     <table class="table table-striped">
                       <thead>
                         <tr>
@@ -276,28 +351,41 @@ table tbody tr th{
                       </thead>
                       <tbody>
                         <tr>
-                          <th class="fw-normal">Power electronics devices and systems</th>
+                          <th class="fw-normal">
+                            Power electronics devices and systems
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Variable speed drive </th>
+                          <th class="fw-normal">Variable speed drive</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Power factor correction techniques</th>
+                          <th class="fw-normal">
+                            Power factor correction techniques
+                          </th>
                         </tr>
                         <tr>
                           <th class="fw-normal">Power quality issues</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Power electronic packaging and thermal management</th>
+                          <th class="fw-normal">
+                            Power electronic packaging and thermal management
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Power electronics application in power system</th>
+                          <th class="fw-normal">
+                            Power electronics application in power system
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Power electronics application in renewable energy</th>
+                          <th class="fw-normal">
+                            Power electronics application in renewable energy
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Power electronics application in e-mobility and electric vehicles</th>
+                          <th class="fw-normal">
+                            Power electronics application in e-mobility and
+                            electric vehicles
+                          </th>
                         </tr>
                       </tbody>
                     </table>
@@ -313,25 +401,38 @@ table tbody tr th{
                       </thead>
                       <tbody>
                         <tr>
-                          <th class="fw-normal"> Internet of things (IoT) application in smart grid and micro grid</th>
+                          <th class="fw-normal">
+                            Internet of things (IoT) application in smart grid
+                            and micro grid
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Wide area management and control system</th>
+                          <th class="fw-normal">
+                            Wide area management and control system
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Phasor measurement technique</th>
+                          <th class="fw-normal">
+                            Phasor measurement technique
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Power grid cyber security </th>
+                          <th class="fw-normal">Power grid cyber security</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Communication technology for smart grid</th>
+                          <th class="fw-normal">
+                            Communication technology for smart grid
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Communication protocol and layers</th>
+                          <th class="fw-normal">
+                            Communication protocol and layers
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Actuator and sensor for smart grid </th>
+                          <th class="fw-normal">
+                            Actuator and sensor for smart grid
+                          </th>
                         </tr>
                         <tr>
                           <th class="fw-normal">Automation of substations</th>
@@ -339,7 +440,7 @@ table tbody tr th{
                       </tbody>
                     </table>
                   </div>
-    
+
                   <div class="row">
                     <table class="table table-striped">
                       <thead>
@@ -351,155 +452,174 @@ table tbody tr th{
                       </thead>
                       <tbody>
                         <tr>
-                          <th class="fw-normal">Data Based Control and AI </th>
+                          <th class="fw-normal">Data Based Control and AI</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Distributed Control Systems </th>
+                          <th class="fw-normal">Distributed Control Systems</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Engineering Applications on Intelligent Control Systems and Optimization</th>
+                          <th class="fw-normal">
+                            Engineering Applications on Intelligent Control
+                            Systems and Optimization
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Evolutionary Computation and Control</th>
+                          <th class="fw-normal">
+                            Evolutionary Computation and Control
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Intelligent Fault Detection, Diagnosis and Prognostics</th>
+                          <th class="fw-normal">
+                            Intelligent Fault Detection, Diagnosis and
+                            Prognostics
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Mechatronics Systems</th>
+                          <th class="fw-normal">Mechatronics Systems</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Machine Learning in Control Applications </th>
+                          <th class="fw-normal">
+                            Machine Learning in Control Applications
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Networked Control </th>
+                          <th class="fw-normal">Networked Control</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Neural Networks Based Control Systems</th>
+                          <th class="fw-normal">
+                            Neural Networks Based Control Systems
+                          </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Optimization Algorithms</th>
+                          <th class="fw-normal">Optimization Algorithms</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Planning and Scheduling</th>
+                          <th class="fw-normal">Planning and Scheduling</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal"> Software Agents for Intelligent Control Systems</th>
+                          <th class="fw-normal">
+                            Software Agents for Intelligent Control Systems
+                          </th>
                         </tr>
                       </tbody>
                     </table>
-                    </div>
-    
+                  </div>
+                </div>
               </div>
-    
             </div>
-    
-          </div>
-    
-        </section>
-      </div>  
-    </section>
+          </section>
+        </div>
+      </section>
     </main>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>STEPS 2025</span>
+            </a>
+            <p style="justify-content: center">
+              The IEEE Conference on Sustainable Technologies for Power and
+              Energy Systems (STPES) is an exceptional gathering of minds
+              dedicated to advancing the field of power and energy systems. With
+              a diverse program featuring keynote speeches, technical paper
+              presentations, panel discussions, and workshops, STPES 2024 covers
+              a wide spectrum of topics ranging from renewable energy
+              integration to cyber security in energy systems.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>STEPS 2025</span>
-          </a>
-          <p style="justify-content:center" >
-		  The IEEE Conference on Sustainable Technologies for Power and Energy Systems (STPES) 
-		  is an exceptional gathering of minds dedicated to advancing the field of power and energy systems. 
-		  With a diverse program featuring keynote speeches, technical paper presentations, panel discussions, and workshops, 
-		  STPES 2024 covers a wide spectrum of topics ranging from renewable energy integration to cyber security 
-		  in energy systems.
-	  </p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="committee.html">Committee</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4 style="opacity: 0">.</h4>
+            <ul>
+              <li><a href="abstract.html">Abstract</a></li>
+              <li><a href="tracks.html">Tracks</a></li>
+              <!-- <li><a href="venue.html">Venue</a></li>
+            <li><a href="accommodation.html">Accommodation</a></li> -->
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4>Contact Us</h4>
+            <p>Department of Electrical Engineering</p>
+            <p>National Institute Of Technology Srinagar</p>
+            <p>Hazratbal Srinagar</p>
+            <p>Jammu and Kashmir</p>
+            <p class="mt-4">
+              <strong>Phone:</strong> <span> +91 6005352412 </span>
+            </p>
+            <p>
+              <strong>Email:</strong> <span>jagtapkushal@nitsri.ac.in </span>
+            </p>
           </div>
         </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="committee.html">Committee</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4 style="opacity: 0;">.</h4>
-          <ul>
-            <li><a href="abstract.html">Abstract</a></li>
-            <li><a href="tracks.html">Tracks</a></li>
-            <!-- <li><a href="venue.html">Venue</a></li>
-            <li><a href="accommodation.html">Accommodation</a></li> -->
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-	  <p>Department of Electrical Engineering</p>
-          <p>National Institute Of Technology Srinagar</p>
-          <p>Hazratbal Srinagar</p>
-          <p>Jammu and Kashmir</p>
-          <p class="mt-4"><strong>Phone:</strong> <span> +91 9419015843 </span></p>
-          <p><strong>Email:</strong> <span>kushaljagtap@nitsri.ac.in </span></p>
-        </div>
-
       </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scroll Top Button -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
 
- 
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
- </footer><!-- End Footer -->
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      function showModal() {
+        var modal = document.querySelector(".important-doc");
+        modal.style.display = "block";
+      }
 
-  <!-- Scroll Top Button -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      function hideModal() {
+        var modal = document.querySelector(".important-doc");
+        modal.style.display = "none";
+      }
 
-  <!-- Preloader -->
-  <div id="preloader">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
+      window.addEventListener("load", showModal);
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script>
-function showModal() {
-  var modal = document.querySelector('.important-doc');
-  modal.style.display = 'block';
-}
-
-function hideModal() {
-  var modal = document.querySelector('.important-doc');
-  modal.style.display = 'none';
-}
-
-window.addEventListener('load', showModal);
-
-document.getElementById('close-modal').addEventListener('click', hideModal);
-
-  </script>
-</body>
-
+      document
+        .getElementById("close-modal")
+        .addEventListener("click", hideModal);
+    </script>
+  </body>
 </html>
