@@ -816,6 +816,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
     -webkit-transform: none;
     transform: none;
     background: none;
+    width: 130%;
   }
   html:not(.no-js) [data-aos="fade-up"] {
     -webkit-transform: translate3d(0, 100px, 0);

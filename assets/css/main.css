@@ -297,7 +297,7 @@ section {
   .navmenu a:focus {
     color: var(--color-nav);
     padding: 18px 15px;
-    font-size: 16px;
+    font-size: 26px;
     font-family: var(--font-secondary);
     font-weight: 400;
     display: flex;
@@ -1959,15 +1959,16 @@ section {
 
 .contact .info-item h3 {
   color: var(--color-secondary);
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 900;
   margin: 20px 0 10px 0;
 }
 
 .contact .info-item p {
   padding: 0;
-  line-height: 24px;
-  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 900;
+  font-size: 25px;
   margin-bottom: 0;
 }
 
