@@ -65,6 +65,11 @@
     <style>
       body {
         position: relative;
+        background-image: url("files/img/Background/image6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -30px;
       }
       .important-doc .doc-container {
         height: 100vh;
@@ -120,22 +125,44 @@
           font-size: 20px;
         }
       }
+
+      .container .row .row .section-title h3 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 1000;
+      }
+      .container .row .row .section-title p {
+        text-align: justify;
+        font-size: 30px;
+        line-height: 2;
+        font-weight: 1000;
+      }
+      ul {
+        font-size: 19px;
+      }
+      ul li h4 {
+        text-align: justify;
+        font-size: 30px;
+        line-height: 2;
+        font-weight: 1000;
+      }
+      .contact .container h3 {
+        font-size: 30px;
+        line-height: 2;
+        font-weight: 800;
+      }
       table thead {
         font-size: 30px;
+        font-weight: 600px;
       }
       table tbody tr th {
         font-size: 25px;
+        font-weight: 1000px;
       }
     </style>
   </head>
 
   <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
-    <!-- <div class="important-doc">
-    <div class="doc-container">
-      <img src="./assets/img/homeImpDoc.png" alt="Important Document">
-      <button id="close-modal">Close</button>
-    </div>
-  </div> -->
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div
@@ -185,13 +212,13 @@
       <section id="about" class="about">
         <div class="container mt-4" data-aos="fade-up" data-aos-delay="100">
           <div class="row align-items-xl-center gy-5">
-            <div class="text-wrap mr-5" style="margin-bottom: -2%">
+            <div class="text-wrap row mr-5">
               <div
                 class="text-left section-title"
                 data-aos="fade-up"
                 style="padding-top: 2%"
               >
-                <h2 style="margin-left: -80%">Tracks</h2>
+                <h2 style="font-size: 100px; margin-top: 50px">Tracks</h2>
               </div>
               <div class="text-left section-title text-wrap mx-4">
                 <h3 style="text-align: left">
@@ -220,7 +247,7 @@
           </div>
           <section id="contact" class="contact">
             <div class="container section-title mt-5" data-aos="fade-up">
-              <h3 style="text-align: left">
+              <h3 style="width: 100%">
                 <b>Area to be covered: </b> <br />
                 This conference is covering diverse areas of Electrical
                 Engineering, and specially areas under the Power System, Power
@@ -243,103 +270,94 @@
                       </thead>
                       <tbody id="table-content">
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Optimal operation of thermal power plant with
                             renewable energy sources
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
-                            Scheduling of green energy technologies
-                          </th>
+                          <th>Scheduling of green energy technologies</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Integration of electric vehicle charging station in
                             distribution system
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Stability, reliability, and security analysis of
                             power grid with EVs and renewable energy sources
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Operation and planning of HVDC transmission system
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Modelling and simulation of large interconnected
                             modern network
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Reactive power management and ancillary services
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
-                            Energy management of micro-grid and nano-grid
-                          </th>
+                          <th>Energy management of micro-grid and nano-grid</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Energy management of integrated distributed energy
                             resources
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Building energy management</th>
+                          <th>Building energy management</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
-                            Economic study of power system
-                          </th>
+                          <th>Economic study of power system</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
-                            Optimization of power system resources
-                          </th>
+                          <th>Optimization of power system resources</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             E-mobility and electric vehicles and its impact on
                             environment
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Operation of energy storage with RESs and
                             centralized grid
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Hydrogen energy storage and its application in power
                             system operation
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Smart grid operations, energy management and
                             protection
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Resiliency of power grid</th>
+                          <th>Resiliency of power grid</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
-                            Deregulation and electricity market
-                          </th>
+                          <th>Deregulation and electricity market</th>
                         </tr>
                       </tbody>
                     </table>
                   </div>
+
                   <div class="row">
                     <table class="table table-striped">
                       <thead>
@@ -351,91 +369,35 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <th class="fw-normal">
-                            Power electronics devices and systems
-                          </th>
+                          <th>Power electronics devices and systems</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Variable speed drive</th>
+                          <th>Variable speed drive</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
-                            Power factor correction techniques
-                          </th>
+                          <th>Power factor correction techniques</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Power quality issues</th>
+                          <th>Power quality issues</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Power electronic packaging and thermal management
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
-                            Power electronics application in power system
-                          </th>
+                          <th>Power electronics application in power system</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Power electronics application in renewable energy
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Power electronics application in e-mobility and
                             electric vehicles
                           </th>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="row">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th class="text-center table-primary">
-                            Information and Communication Technology
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th class="fw-normal">
-                            Internet of things (IoT) application in smart grid
-                            and micro grid
-                          </th>
-                        </tr>
-                        <tr>
-                          <th class="fw-normal">
-                            Wide area management and control system
-                          </th>
-                        </tr>
-                        <tr>
-                          <th class="fw-normal">
-                            Phasor measurement technique
-                          </th>
-                        </tr>
-                        <tr>
-                          <th class="fw-normal">Power grid cyber security</th>
-                        </tr>
-                        <tr>
-                          <th class="fw-normal">
-                            Communication technology for smart grid
-                          </th>
-                        </tr>
-                        <tr>
-                          <th class="fw-normal">
-                            Communication protocol and layers
-                          </th>
-                        </tr>
-                        <tr>
-                          <th class="fw-normal">
-                            Actuator and sensor for smart grid
-                          </th>
-                        </tr>
-                        <tr>
-                          <th class="fw-normal">Automation of substations</th>
                         </tr>
                       </tbody>
                     </table>
@@ -452,54 +414,89 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <th class="fw-normal">Data Based Control and AI</th>
+                          <th>Data Based Control and AI</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Distributed Control Systems</th>
+                          <th>Distributed Control Systems</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Engineering Applications on Intelligent Control
                             Systems and Optimization
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
-                            Evolutionary Computation and Control
-                          </th>
+                          <th>Evolutionary Computation and Control</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Intelligent Fault Detection, Diagnosis and
                             Prognostics
                           </th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Mechatronics Systems</th>
+                          <th>Mechatronics Systems</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
-                            Machine Learning in Control Applications
-                          </th>
+                          <th>Machine Learning in Control Applications</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Networked Control</th>
+                          <th>Networked Control</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
-                            Neural Networks Based Control Systems
-                          </th>
+                          <th>Neural Networks Based Control Systems</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Optimization Algorithms</th>
+                          <th>Optimization Algorithms</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">Planning and Scheduling</th>
+                          <th>Planning and Scheduling</th>
                         </tr>
                         <tr>
-                          <th class="fw-normal">
+                          <th>
                             Software Agents for Intelligent Control Systems
                           </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="row">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th class="text-center table-primary">
+                            Information and Communication Technology
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            Internet of things (IoT) application in smart grid
+                            and micro grid
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>Wide area management and control system</th>
+                        </tr>
+                        <tr>
+                          <th>Phasor measurement technique</th>
+                        </tr>
+                        <tr>
+                          <th>Power grid cyber security</th>
+                        </tr>
+                        <tr>
+                          <th>Communication technology for smart grid</th>
+                        </tr>
+                        <tr>
+                          <th>Communication protocol and layers</th>
+                        </tr>
+                        <tr>
+                          <th>Actuator and sensor for smart grid</th>
+                        </tr>
+                        <tr>
+                          <th>Automation of substations</th>
                         </tr>
                       </tbody>
                     </table>

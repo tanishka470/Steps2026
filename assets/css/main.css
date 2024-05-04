@@ -928,7 +928,7 @@ section {
 /* About Section - Home Page
 ------------------------------*/
 .about {
-  --color-background: #f4f4f4;
+  background: transparent;
 }
 
 .about .content h3 {
