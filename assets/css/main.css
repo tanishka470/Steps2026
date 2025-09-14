@@ -1,3 +1,26 @@
+/* Speaker Card Customization */
+.speaker-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 10px 24px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.2s;
+  max-width: none;
+}
+.speaker-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+.speaker-card .speaker-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #eaeaea;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin: 0;
+  display: block;
+}
 /**
 * Template Name: Append
 * Updated: Jun 20 2023 with Bootstrap v5.3.0
@@ -713,6 +736,7 @@ section {
 .footer .footer-about p {
   font-size: 14px;
   font-family: var(--font-primary);
+  text-align: justify;
 }
 
 .footer .social-links a {
@@ -772,6 +796,7 @@ section {
   color: rgba(var(--color-default-rgb), 0.8);
   display: inline-block;
   line-height: 1;
+  text-align: justify;
 }
 
 .footer .footer-links ul a:hover {
@@ -780,6 +805,7 @@ section {
 
 .footer .footer-contact p {
   margin-bottom: 5px;
+  text-align: justify;
 }
 
 .footer .copyright {
@@ -790,6 +816,7 @@ section {
 
 .footer .copyright p {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .footer .credits {
