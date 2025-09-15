@@ -1,3 +1,102 @@
+/* Global Responsive Tweaks */
+@media (max-width: 991.98px) {
+  .container, .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  section, .section-title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+    font-size: calc(1.1rem + 2vw) !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container, .container-fluid {
+    max-width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  section, .section-title {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  h1 {
+    font-size: 2.2rem !important;
+  }
+  h2 {
+    font-size: 1.6rem !important;
+  }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto !important;
+  }
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .row, [class*="col-"] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .section-title h2 {
+    font-size: 2rem !important;
+  }
+  .section-title {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container, .container-fluid {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  h2 {
+    font-size: 1.2rem !important;
+  }
+  h3 {
+    font-size: 1rem !important;
+  }
+  .section-title h2 {
+    font-size: 1.2rem !important;
+  }
+}
+/* Responsive styles for four info divs in call_for_paper.html */
+.four-info-divs-row .card {
+  min-width: 0;
+  margin-bottom: 16px;
+}
+@media (max-width: 991.98px) {
+  .four-info-divs-row .card {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .four-info-divs-row {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .four-info-divs-row .card {
+    width: 100%;
+    margin-bottom: 18px;
+    min-width: 0;
+  }
+}
 /* Speaker Card Customization */
 .speaker-card {
   background: #fff;
