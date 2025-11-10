@@ -76,6 +76,36 @@
     font-size: 1.2rem !important;
   }
 }
+
+/* Make main textual content wider across the site */
+.container .section-title h2,
+.container .section-title p,
+.container .row .row .info-item h3,
+.container .row .row .info-item p,
+.container .row .row .info-item ul,
+.section-title h2,
+.section-title p {
+  width: 100% !important;
+  max-width: 1200px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.container p,
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container ul {
+  max-width: 1200px;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 991.98px) {
+  .container p, .container h1, .container h2, .container h3 { max-width: 100% !important; }
+}
 /* Responsive styles for four info divs in call_for_paper.html */
 .four-info-divs-row .card {
   min-width: 0;
