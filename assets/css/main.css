@@ -111,6 +111,31 @@
   min-width: 0;
   margin-bottom: 16px;
 }
+
+/* CFP marquee (reusable) */
+.cfp-marquee {
+  width: 100%;
+  background: var(--color-box-background);
+  padding: 10px 0;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  border: 3px solid rgba(var(--color-primary-rgb), 0.5);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 rgba(var(--color-primary-rgb), 0.10);
+  backdrop-filter: blur(2px);
+  text-align: center;
+}
+.cfp-marquee marquee {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.15);
+}
+@media (max-width: 767.98px) {
+  .cfp-marquee { padding: 8px 0; margin-top: 12px; }
+  .cfp-marquee marquee { font-size: 1rem; }
+}
 @media (max-width: 991.98px) {
   .four-info-divs-row .card {
     margin-bottom: 20px;
