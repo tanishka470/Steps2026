@@ -79,31 +79,21 @@
       cursor: pointer;
     }
 
-    /* Hero logos */
-    .hero-logo-wrap {
-      display: flex;
-      gap: 18px;
-      align-items: center;
-      margin-top: 16px;
-      margin-bottom: 12px;
-      flex-wrap: wrap;
-    }
-
-    .hero-logo-wrap img {
-      display: block;
+    /* Navbar logos */
+    .nav-logo {
       object-fit: contain;
-      background: transparent;
-      padding: 0;
-      border-radius: 0;
+      display: inline-block;
+      vertical-align: middle;
     }
 
-    .hero-logo-nit {
-      height: 86px;
+    .nav-logo-nit {
+      height: 42px;
       width: auto;
+      margin-right: 10px;
     }
 
-    .hero-logo-ieee {
-      height: 86px;
+    .nav-logo-ieee {
+      height: 34px;
       width: auto;
     }
 
@@ -113,11 +103,10 @@
       }
     }
 
-    @media (max-width:768px) {
-
-      .hero-logo-nit,
-      .hero-logo-ieee {
-        height: 62px;
+    @media (max-width:1199px) {
+      .nav-logo-nit {
+        height: 34px;
+        margin-right: 8px;
       }
     }
 
@@ -146,12 +135,19 @@
 </head>
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+  <!-- <div class="important-doc">
+    <div class="doc-container">
+      <img src="./assets/img/homeImpDoc.png" alt="Important Document">
+      <button id="close-modal">Close</button>
+    </div>
+  </div> -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="picture2.jpg" alt="NIT Srinagar Logo" class="nav-logo nav-logo-nit">
         <h1>STEPS 2026</h1>
       </a>
 
@@ -160,23 +156,26 @@
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <!-- <li><a href="tracks.html">Tracks</a></li> -->
           <li><a href="photos.html">Photos</a></li>
           <li><a href="committee.html">Committee</a></li>
           <li><a href="speakers.html">Speakers</a></li>
           <li><a href="call_for_paper.html">Call For Paper</a></li>
           <li><a href="previousedition.html">Previous Editions</a></li>
           <li><a href="registration.html">Registration</a></li>
+          <!-- <li><a href="accommodation.html">Accommodation</a></li> -->
           <li><a href="contact.html">Contact</a></li>
+          <li class="d-none d-xl-flex align-items-center ms-2">
+            <img src="picture1.jpg" alt="IEEE STEPS Logo" class="nav-logo nav-logo-ieee">
+          </li>
         </ul>
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-      <!-- End Nav Menu -->
+      </nav><!-- End Nav Menu -->
 
       <span></span>
     </div>
-  </header>
-  <!-- End Header -->
+  </header><!-- End Header -->
 
   <main id="main">
 
@@ -202,13 +201,6 @@
               October 23-25, 2026 | NIT Srinagar, Jammu and Kashmir
             </p>
 
-            <!-- Logos -->
-            <div class="hero-logo-wrap" data-aos="fade-up" data-aos-delay="220">
-              <img src="picture2.jpg" alt="NIT Srinagar Logo" class="hero-logo-nit">
-              <img src="picture1.jpg" alt="IEEE STEPS Logo" class="hero-logo-ieee">
-            </div>
-
-            <!-- Running text -->
             <div class="cfp-marquee">
               <marquee scrollamount="12" loop="infinite" behavior="scroll">
                 Submit your
@@ -220,7 +212,7 @@
           </div>
 
           <div class="col-lg-5">
-            <br><br><br><br>
+            <br /><br /><br /><br />
           </div>
         </div>
       </div>
@@ -273,7 +265,9 @@
 
         </div>
       </div>
-    </section>
+    </section><!-- End About Section -->
+
+    <!-- (Your sponsors section remains commented exactly as before, omitted here for readability) -->
 
   </main>
 
@@ -337,9 +331,8 @@
   </footer>
 
   <!-- Scroll Top Button -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader">
@@ -360,6 +353,22 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    function showModal() {
+      var modal = document.querySelector('.important-doc');
+      if (modal) modal.style.display = 'block';
+    }
+
+    function hideModal() {
+      var modal = document.querySelector('.important-doc');
+      if (modal) modal.style.display = 'none';
+    }
+
+    window.addEventListener('load', showModal);
+
+    var closeBtn = document.getElementById('close-modal');
+    if (closeBtn) closeBtn.addEventListener('click', hideModal);
+  </script>
 </body>
 
 </html>
