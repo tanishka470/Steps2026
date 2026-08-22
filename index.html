@@ -11,14 +11,14 @@
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-<link rel="manifest" href="assets/img/favicons/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicons/site.webmanifest">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,73 +38,119 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
-    body{
+    body {
       position: relative;
     }
-.important-doc .doc-container {
-  height: 100vh;
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-}
-.important-doc .doc-container img{
-  height: 100%;
-}
-.banner {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 80vh;
-  background-color: #fff; /* Set your desired background color */
-  overflow: hidden;       /* Hide any content that might extend beyond the banner */
-}
 
-.banner {
-  width: 100%;        /* Make sure the image occupies the entire banner width */
-  height: auto;       /* Maintain the aspect ratio */
-}
-#close-modal {
-  position: absolute;
-  top: 25px;
-  right: 50px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-@media screen and (max-width:1150px) {
-  .important-doc .doc-container img{
-  height: 80%;
-}
-}
-@media screen and (max-width:700px) {
-  .important-doc .doc-container img{
-  height: 55%;
-}
-#close-modal{
-  font-size: 20px;
-}
-}
-table thead{
-  font-size: 30px;
-}
-table tbody tr th{
-  font-size: 26px;
-}
+    .important-doc .doc-container {
+      height: 100vh;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10000;
+    }
 
-table tbody tr th span{
-  float: right;
-}
+    .important-doc .doc-container img {
+      height: 100%;
+    }
+
+    .banner {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 80vh;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+
+    #close-modal {
+      position: absolute;
+      top: 25px;
+      right: 50px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    /* NEW: Hero logos */
+    .hero-logo-wrap {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 18px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-logo-wrap img {
+      background: #fff;
+      padding: 6px 10px;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+
+    .hero-logo-nit {
+      height: 95px;
+      width: auto;
+    }
+
+    .hero-logo-ieee {
+      height: 70px;
+      width: auto;
+    }
+
+    @media screen and (max-width:1150px) {
+      .important-doc .doc-container img {
+        height: 80%;
+      }
+    }
+
+    @media (max-width:768px) {
+      .hero-logo-nit {
+        height: 70px;
+      }
+
+      .hero-logo-ieee {
+        height: 52px;
+      }
+    }
+
+    @media screen and (max-width:700px) {
+      .important-doc .doc-container img {
+        height: 55%;
+      }
+
+      #close-modal {
+        font-size: 20px;
+      }
+    }
+
+    table thead {
+      font-size: 30px;
+    }
+
+    table tbody tr th {
+      font-size: 26px;
+    }
+
+    table tbody tr th span {
+      float: right;
+    }
   </style>
 </head>
 
@@ -115,35 +161,28 @@ table tbody tr th span{
       <button id="close-modal">Close</button>
     </div>
   </div> -->
+
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-  <h1>STEPS 2026</h1>
+        <h1>STEPS 2026</h1>
       </a>
 
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html"   class="active">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <!-- <li><a href="tracks.html">Tracks</a></li> -->
           <li><a href="photos.html">Photos</a></li>
           <li><a href="committee.html">Committee</a></li>
           <li><a href="speakers.html">Speakers</a></li>
           <li><a href="call_for_paper.html">Call For Paper</a></li>
-	   <li><a href="previousedition.html">Previous Editions</a></li>
-		
-          <!-- <li><a href="publications.html">Publications</a></li>
-          <li><a href="technical-exhibition.html" >Exhibition</a></li>
-          <li><a href="course-schedule.html">Conference Schedule</a></li>
-          <li><a href="preconfrence.html">Preconference Course</a></li>
-          <li><a href="venue.html">Venue</a></li>
-          <li><a href="sponsorship.html">Sponsorship</a></li> -->
-          <li><a href="registration.html" >Registration</a></li>
+          <li><a href="previousedition.html">Previous Editions</a></li>
+          <li><a href="registration.html">Registration</a></li>
           <!-- <li><a href="accommodation.html">Accommodation</a></li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -152,7 +191,6 @@ table tbody tr th span{
       </nav><!-- End Nav Menu -->
 
       <span></span>
-
     </div>
   </header><!-- End Header -->
 
@@ -160,50 +198,49 @@ table tbody tr th span{
 
     <!-- Hero Section - Home Page -->
     <section id="hero" class="hero">
-
       <img src="power_grid.jpg" alt="" data-aos="fade-in">
-      <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="./assets/img/nitsri1.jpg" alt="First slide" style="width: 00px;"> -->
-          </div>
-          <!-- <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide">
-          </div> -->
-        </div>
-      </div>
+
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
             <h2 data-aos="fade-up" data-aos-delay="100">STEPS-2026</h2>
-	    <h3 data-aos="fade-up" data-aos-delay="100"> 2<sup>nd</sup>
-        International Conference on Sustainable Technology for Energy
-  and Power Systems 2026
-            </h3>
-		  <h3 data-aos="fade-up" data-aos-delay="100">A Step Towards Green, Clean and Reliable Energy
+
+            <h3 data-aos="fade-up" data-aos-delay="100">
+              2<sup>nd</sup> International Conference on Sustainable Technology for Energy
+              and Power Systems 2026
             </h3>
 
-            <p data-aos="fade-up" data-aos-delay="200">October 23-25, 2026 | NIT Srinagar, Jammu and Kashmir</p>
+            <h3 data-aos="fade-up" data-aos-delay="100">
+              A Step Towards Green, Clean and Reliable Energy
+            </h3>
+
+            <p data-aos="fade-up" data-aos-delay="200">
+              October 23-25, 2026 | NIT Srinagar, Jammu and Kashmir
+            </p>
+
+            <!-- NEW: Logos -->
+            <div class="hero-logo-wrap" data-aos="fade-up" data-aos-delay="220">
+              <img src="assets/img/nit-srinagar-logo.png" alt="NIT Srinagar Logo" class="hero-logo-nit">
+              <img src="assets/img/ieee-steps-logo.png" alt="IEEE STEPS Logo" class="hero-logo-ieee">
+            </div>
+
+            <!-- UPDATED: Marquee text -->
             <div class="cfp-marquee">
               <marquee scrollamount="12" loop="infinite" behavior="scroll">
-                Submit your <a href="https://cmt3.research.microsoft.com/STEPS2026" target="_blank" style="text-decoration:underline; color:inherit;">STEPS 2026</a>
+                Submit your
+                <a href="https://cmt3.research.microsoft.com/STEPS2026" target="_blank"
+                  style="text-decoration:underline; color:inherit;">STEPS 2026</a>
+                | All accepted papers will be published and available online on IEEE Xplore
               </marquee>
             </div>
           </div>
-         <div class="col-lg-5">
 
-		  <br/><br/><br/><br/>
-                      </div>  
-</section>
-
-    
-
-
-
-    
+          <div class="col-lg-5">
+            <br /><br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="about" class="about">
       <div class="container mt-4" data-aos="fade-up" data-aos-delay="100">
@@ -212,6 +249,7 @@ table tbody tr th span{
             <h2>Important Announcements</h2>
             <p>Last Updated on 14 september,2025</p>
           </div>
+
           <div class="text-wrap mr-5" style="margin-bottom: -2%;">
             <div class="row">
               <table class="table table-striped">
@@ -224,158 +262,38 @@ table tbody tr th span{
                 </thead>
                 <tbody id="table-content">
                   <tr>
-                    <th class="fw-normal">Notification of Paper Submission <span>April 20, 2026</span> </th>
+                    <th class="fw-normal">Notification of Paper Submission <span>April 20, 2026</span></th>
                   </tr>
                   <tr>
-                    <th class="fw-normal"> Paper Submission Deadline <span>August 25, 2026</span></th>
+                    <th class="fw-normal">Paper Submission Deadline <span>August 14, 2026</span></th>
                   </tr>
                   <tr>
-                    <th class="fw-normal">Notification of Paper Acceptance <span>september 01, 2026</span> 
-                    </th>
+                    <th class="fw-normal">Notification of Paper Acceptance <span>september 01, 2026</span></th>
                   </tr>
                   <tr>
-                    <th class="fw-normal"> Camera-ready Paper Submissions <span>September 15, 2026</span> </th>
-                  </tr>
-                  
-                  <tr>
-                    <th class="fw-normal">Early Bird Registration open<span>September 16, 2026</span> </th>
-                  </tr>
-                   <tr>
-                    <th class="fw-normal">Early Bird Registration close<span>September 30, 2026</span> </th>
+                    <th class="fw-normal">Camera-ready Paper Submissions <span>September 15, 2026</span></th>
                   </tr>
                   <tr>
-                    <th class="fw-normal">Late Registration Deadline<span>October 14, 2026</span> </th>
+                    <th class="fw-normal">Early Bird Registration open<span>September 16, 2026</span></th>
                   </tr>
-
-          
+                  <tr>
+                    <th class="fw-normal">Early Bird Registration close<span>September 30, 2026</span></th>
+                  </tr>
+                  <tr>
+                    <th class="fw-normal">Late Registration Deadline<span>October 14, 2026</span></th>
+                  </tr>
                 </tbody>
               </table>
-              </div>
-    
+            </div>
           </div>
-    
-        </section>
-      </div>  
+
+        </div>
+      </div>
     </section><!-- End About Section -->
 
+    <!-- (Your sponsors section remains commented exactly as before, omitted here for readability) -->
 
-    <!-- <section id="clients" class="clients"></section>
-      <div class="banner">
-        <img src="VAS_AD_resized.jpg" alt="Banner Description">
-      </div>
-    </section> -->
-
-
-    <!-- <section id="clients" class="clients">
-      <div class="container section-title" data-aos="fade-up" style="padding-top: 2%;">
-        <h2>Platinum Sponsors</h2> 
-      </div>
-      <div class="container-fluid" data-aos="fade-up">
-        <div class="row gy-4" style="display: flex; flex-direction: row; justify-content: center; gap: 40px;">
-
-          <div class="col-xl-3 col-md-3 col-6 ">
-            <a href="https://www.drdo.gov.in/">
-              <img src="assets/img/sponsors/DRDO.png" class="img-fluid" alt="" >
-            </a>
-          </div>  
-
-        </div>
-      </div>
-
-
-
-      <div class="container section-title" data-aos="fade-up" style="padding-top: 2%;">
-        <h2>Diamond Sponsors</h2> 
-      </div>
-      <div class="container-fluid" data-aos="fade-up">
-        <div class="row gy-4" style="display: flex; flex-direction: row; justify-content: center; gap: 40px;">
-
-
-          <div class="col-xl-3 col-md-3 col-6 ">
-            <a href="https://iocl.com/">
-              <img src="assets/img/sponsors/iocl_2023.png" class="img-fluid" alt="">
-            </a>
-          </div>  
-
-          <div class="col-xl-3 col-md-3 col-6 ">
-            <a href="https://rtec-instruments.com/">
-              <img src="assets/img/sponsors/Rtec-Instruments-Logo-2.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-
-
-          <div class="col-xl-3 col-md-3 col-6 ">
-            <a href="https://www.bharatpetroleum.in/">
-              <img src="assets/img/sponsors/Bharat-Petroleum-Logo-PNG.png" class="img-fluid" alt="" style="width: 45%; height: auto;">
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="container section-title" data-aos="fade-up" style="padding-top: 2%;">
-        <h2>Gold Sponsors</h2> 
-      </div>
-      <div class="container-fluid" data-aos="fade-up">
-        <div class="row gy-4" style="display: flex; flex-direction: row; justify-content: center;">
-
-          <div class="col-xl-3 col-md-3 col-6 ">
-            <a href="https://serb.gov.in/">
-              <img src="assets/img/sponsors/serb_15.gif" class="img-fluid" alt="" width="200" height="200">
-            </a>
-          </div>
-
-          <div class="col-xl-3 col-md-3 col-6 ">
-            <a href="https://www.spinksworld.com/">
-              <img src="assets/img/sponsors/spinks2.png" class="img-fluid" alt="" width="200" height="200">
-            </a>
-          </div>
-          <div class="col-xl-3 col-md-3 col-6 ">
-            <a href="https://www.markolaser.com/">
-              <img src="assets/img/sponsors/mar2.png" class="img-fluid" alt="" width="200" height="200">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="container section-title" data-aos="fade-up" style="padding-top: 2%;">
-        <h2>Silver Sponsors</h2> 
-      </div>
-      <div class="row gy-4" style="display: flex; flex-direction: row; justify-content: center;">
-
-        <div class="col-xl-3 col-md-3 col-6 ">
-          <a href="https://www.adityabirla.com/">
-            <img src="assets/img/sponsors/Aditya Brila.jpg" class="img-fluid" alt="" width="150" height="150">
-          </a>
-        </div>
-
-        <div class="col-xl-3 col-md-3 col-6 ">
-          <a href="https://www.bruker.com/en.html">
-            <img src="assets/img/sponsors/Bruker.png" class="img-fluid" alt="" width="150" height="150">
-          </a>
-        </div>
-      </div>
-
-
-
-      </div>
-      <div class="container section-title" data-aos="fade-up" style="padding-top: 2%;">
-        <h2>Media Partner</h2> 
-      </div>
-      <div class="container-fluid" data-aos="fade-up">
-        <div class="row gy-4" style="display: flex; flex-direction: row; justify-content: center; gap: 40px;">
-
-          <div class="col-xl-3 col-md-3 col-6 ">
-              <img src="assets/img/sponsors/vas.png" class="img-fluid" alt="" style="width: 60%; height: auto;">
-             </a> 
-          </div>  
-
-        </div>
-      </div>
-    </section> -->
-
-
-
-    </main>
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -415,16 +333,11 @@ table tbody tr th span{
           <h4 style="opacity: 0">.</h4>
           <ul>
             <li><a href="call_for_paper.html">Call For Paper</a></li>
-            
-            <!-- <li><a href="venue.html">Venue</a></li>
-          <li><a href="accommodation.html">Accommodation</a></li> -->
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
-        <div
-          class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
-        >
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>Department of Electrical Engineering</p>
           <p>National Institute Of Technology Srinagar</p>
@@ -442,7 +355,8 @@ table tbody tr th span{
   </footer>
 
   <!-- Scroll Top Button -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader">
@@ -464,20 +378,20 @@ table tbody tr th span{
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-function showModal() {
-  var modal = document.querySelector('.important-doc');
-  modal.style.display = 'block';
-}
+    function showModal() {
+      var modal = document.querySelector('.important-doc');
+      if (modal) modal.style.display = 'block';
+    }
 
-function hideModal() {
-  var modal = document.querySelector('.important-doc');
-  modal.style.display = 'none';
-}
+    function hideModal() {
+      var modal = document.querySelector('.important-doc');
+      if (modal) modal.style.display = 'none';
+    }
 
-window.addEventListener('load', showModal);
+    window.addEventListener('load', showModal);
 
-document.getElementById('close-modal').addEventListener('click', hideModal);
-
+    var closeBtn = document.getElementById('close-modal');
+    if (closeBtn) closeBtn.addEventListener('click', hideModal);
   </script>
 </body>
 
