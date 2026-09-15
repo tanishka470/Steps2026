@@ -132,19 +132,22 @@
 
     .info-section h4 {
       font-weight: 700;
-      font-size: 28px;
-      margin: 16px 0 10px;
+      font-size: 32px;
+      margin: 16px 0 14px;
+      color: #1e2a3a;
     }
 
     .info-section p,
     .info-section li {
       font-size: 20px;
-      line-height: 1.5;
+      line-height: 1.7;
+      color: #1f2b3a;
     }
 
-    .info-section ol {
+    .info-section ol,
+    .info-section ul {
       padding-left: 28px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .info-section .sub-list {
@@ -152,10 +155,43 @@
       margin-bottom: 8px;
     }
 
+    .info-section .lead-text {
+      font-size: 22px;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .info-section .highlight-box {
+      background: #f4f8ff;
+      border-left: 5px solid #2f62cc;
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin: 14px 0 18px;
+    }
+
+    .info-section .step-title {
+      font-size: 24px;
+      font-weight: 800;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      color: #172130;
+    }
+
+    .info-section a {
+      color: #e43f3f;
+      font-weight: 600;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .info-section a:hover {
+      text-decoration: underline;
+    }
+
     .divider {
       border: none;
       border-top: 3px solid #e9ecef;
-      margin: 22px 0;
+      margin: 24px 0;
     }
   </style>
 </head>
@@ -345,64 +381,86 @@
                 <!-- Added Information Section -->
                 <div class="info-section">
                   <h2>Camera-Ready Submission</h2>
-                  <p>Authors are requested to prepare and upload the revised/camera-ready version of the paper through the Microsoft CMT portal.</p>
-
-                  <ol>
-                    <li>Carefully address and incorporate the reviewers' comments and recommendations.</li>
-                    <li>Follow the prescribed conference formatting (<a href="https://www.ieee.org/conferences/publishing/templates"
-                        target="_blank">https://www.ieee.org/conferences/publishing/templates</a>) and submission guidelines.</li>
-                    <li>Plagiarism in the camera-ready paper should be below 20% (excluding references) and below 30% (including references).</li>
-                    <li>The AI content of the camera-ready paper should be zero %.</li>
-                    <li>The camera-ready paper should be uploaded through the CMT portal only after having passed through IEEE PDF Express
-                      (<a href="https://ieee-pdf-express.org/Account/Login" target="_blank">https://ieee-pdf-express.org/Account/Login</a>).</li>
-                  </ol>
-
-                  <h4>PDF Instructions for Authors</h4>
-                  <p><b>a.&nbsp;&nbsp;&nbsp;Before Creating a PDF</b><br>
-                    Proofread your source document thoroughly before creating a PDF. No revisions should be needed after this point.
+                  <p class="lead-text">
+                    Authors are requested to upload the revised (camera-ready) manuscript through the Microsoft CMT portal after incorporating all reviewer comments.
                   </p>
 
-                  <p><b>b.&nbsp;&nbsp;&nbsp;Creating Your PDF eXpress Account</b></p>
+                  <div class="highlight-box">
+                    <ol>
+                      <li>Address all reviewer observations and recommendations carefully.</li>
+                      <li>
+                        Follow IEEE formatting and conference submission guidelines:
+                        <a href="https://www.ieee.org/conferences/publishing/templates" target="_blank">
+                          https://www.ieee.org/conferences/publishing/templates
+                        </a>
+                      </li>
+                      <li>Keep similarity within conference limits: below 20% (excluding references) and below 30% (including references).</li>
+                      <li>AI-generated content in the final manuscript should be 0%.</li>
+                      <li>
+                        Upload the final paper to CMT only after successful IEEE PDF eXpress verification:
+                        <a href="https://ieee-pdf-express.org/Account/Login" target="_blank">
+                          https://ieee-pdf-express.org/Account/Login
+                        </a>
+                      </li>
+                    </ol>
+                  </div>
+
+                  <h4>PDF Instructions for Authors</h4>
+
+                  <p class="step-title">a. Before Creating a PDF</p>
+                  <p>
+                    Proofread your source manuscript thoroughly before PDF generation. Ensure no further revisions are required at this stage.
+                  </p>
+
+                  <p class="step-title">b. Creating Your PDF eXpress Account</p>
                   <ol class="sub-list">
-                    <li>Log in to the IEEE PDF eXpressTM site.</li>
+                    <li>Visit and log in to the IEEE PDF eXpress portal.</li>
                   </ol>
                   <p><b>First-time users:</b></p>
                   <ol class="sub-list" start="2">
-                    <li>Create an account.</li>
-                    <li>Enter: <b>71724X</b> for Conference ID, your email address, and a password.</li>
-                    <li>Continue as prompted. A confirmation will be displayed and emailed to you.</li>
+                    <li>Create a new account.</li>
+                    <li>Enter Conference ID <b>71724X</b>, your email address, and a password.</li>
+                    <li>Proceed as instructed. A confirmation will be shown and sent to your email.</li>
                   </ol>
-                  <p><b>Previous users:</b> follow the same steps using your existing password. Verify your contact information is current.</p>
+                  <p><b>Existing users:</b> use your current login credentials and verify your contact details before proceeding.</p>
 
-                  <p><b>c.&nbsp;&nbsp;&nbsp;Uploading and Checking Files</b></p>
-                  <p><b>Dashboard:</b> Click Create New Title after logging in to start a new paper submission.<br>
-                    <b>Upload:</b> Enter your paper title, then choose to upload either a PDF for checking or source files (like Word or compressed TeX archives) for conversion.<br>
-                    <b>Review:</b> Wait for the check or conversion process to complete.
+                  <p class="step-title">c. Uploading and Checking Files</p>
+                  <p>
+                    <b>Dashboard:</b> Select <i>Create New Title</i> after login to begin a new submission.<br>
+                    <b>Upload:</b> Enter your paper title, then upload either the PDF for validation or source files (Word/TeX archive) for conversion.<br>
+                    <b>Review:</b> Wait for the validation/conversion process to finish.
                   </p>
 
-                  <p><b>d.&nbsp;&nbsp;&nbsp;Approving and Submitting</b></p>
-                  <p><b>Download:</b> If successful, download your verified, IEEE Xplore-compatible PDF.<br>
-                    <b>Approve:</b> Click the Approve button to submit the certified PDF directly to your conference editor.
+                  <p class="step-title">d. Approving and Submitting</p>
+                  <p>
+                    <b>Download:</b> Download the verified IEEE Xplore-compatible PDF after successful validation.<br>
+                    <b>Approve:</b> Click <i>Approve</i> to submit the certified PDF to the conference editor.
                   </p>
 
-                  <p>Please note that the final publication of the paper is subject to compliance with the conference's publication and submission requirements.</p>
+                  <p>
+                    Final publication is subject to full compliance with all conference publication and submission requirements.
+                  </p>
 
                   <hr class="divider">
 
                   <h3>IEEE Copyright Form</h3>
-                  <p>Authors are also required to complete and submit the IEEE Copyright Form through the Microsoft CMT portal as part of the camera-ready submission process.</p>
-                  <p>Please ensure that the copyright form is completed correctly and submitted through the designated CMT interface within the specified deadline. The paper cannot be processed for publication without completion of the required copyright formalities.</p>
+                  <p>
+                    Authors must also complete and submit the IEEE Copyright Form through the Microsoft CMT portal as part of the camera-ready workflow.
+                  </p>
+                  <p>
+                    Please ensure this form is submitted accurately and within the deadline. Papers cannot be processed for publication without completed copyright formalities.
+                  </p>
 
                   <hr class="divider">
 
                   <h3>Registration</h3>
                   <ol>
                     <li>
-                      The authors are required to fill out the Registration form by clicking on the following link:<br>
+                      Complete the Registration Form using the link below:<br>
                       <a href="https://forms.gle/BoYxsPJ5iyFfGo5W8" target="_blank">https://forms.gle/BoYxsPJ5iyFfGo5W8</a>
                     </li>
-                    <li>At least one author of each accepted paper will be required to complete registration and present the paper at the conference/online, as per the conference guidelines.</li>
-                    <li>Authors are required to fill out a separate registration form for each accepted paper.</li>
+                    <li>At least one author of each accepted paper must register and present the paper (offline/online) as per conference guidelines.</li>
+                    <li>Submit a separate registration form for each accepted paper.</li>
                   </ol>
                 </div>
 
