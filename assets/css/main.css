@@ -3095,3 +3095,29 @@ section {
   color: var(--color-inverse);
   background-color: rgba(var(--color-primary-rgb), 0.8);
 }
+
+
+/* Navbar logos */
+.nav-logo {
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-logo-nit {
+  height: 42px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.nav-logo-ieee {
+  height: 34px;
+  width: auto;
+}
+
+@media (max-width: 1199px) {
+  .nav-logo-nit {
+    height: 34px;
+    margin-right: 8px;
+  }
+}
