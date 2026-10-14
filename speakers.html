@@ -40,57 +40,70 @@
       font-size: clamp(3rem, 8vw, 6.25rem);
     }
 
-    .speaker-card {
-      height: 100%;
+    .speakers-list {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .speaker-row {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      padding: 28px 32px;
+      margin-bottom: 24px;
       background: #ffffff;
       border-radius: 12px;
-      padding: 24px 20px 30px;
-      text-align: center;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .speaker-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.14);
+    .speaker-row:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.13);
     }
 
     .speaker-photo-placeholder {
-      width: 100%;
-      aspect-ratio: 1 / 1;
+      flex: 0 0 170px;
+      width: 170px;
+      height: 170px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: 10px;
-      border-radius: 8px;
+      gap: 6px;
+      border: 5px solid rgba(31, 78, 121, 0.15);
+      border-radius: 50%;
       color: #ffffff;
       background: linear-gradient(135deg, #1f4e79, #3b82a0);
-      margin-bottom: 24px;
+      text-align: center;
+      overflow: hidden;
     }
 
     .speaker-photo-placeholder i {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
 
     .speaker-photo-placeholder span {
-      font-size: 0.95rem;
+      font-size: 0.72rem;
       font-weight: 600;
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
 
-    .speaker-card h3 {
+    .speaker-info {
+      flex: 1;
+    }
+
+    .speaker-info h3 {
       margin-bottom: 10px;
       color: #222222;
       font-family: "Montserrat", sans-serif;
-      font-size: 1.45rem;
+      font-size: 1.65rem;
       font-weight: 700;
     }
 
-    .speaker-card .speaker-affiliation {
-      min-height: 58px;
-      margin-bottom: 20px;
+    .speaker-affiliation {
+      margin-bottom: 15px;
       color: #555555;
       font-size: 1rem;
       line-height: 1.6;
@@ -114,8 +127,21 @@
         padding-top: 100px;
       }
 
-      .speaker-card {
-        padding: 20px 16px 26px;
+      .speaker-row {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 20px;
+        text-align: center;
+      }
+
+      .speaker-photo-placeholder {
+        flex-basis: 145px;
+        width: 145px;
+        height: 145px;
+      }
+
+      .speaker-info h3 {
+        font-size: 1.35rem;
       }
     }
   </style>
@@ -169,18 +195,18 @@
       </div>
 
       <div class="container">
-        <div class="row gy-5 justify-content-center">
+        <div class="speakers-list">
 
           <!-- Speaker 1 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="speaker-card">
+          <div class="speaker-row" data-aos="fade-up" data-aos-delay="100">
 
-              <!-- Replace this placeholder with the speaker's photo later -->
-              <div class="speaker-photo-placeholder" role="img" aria-label="Photo of Prof. Bhim Singh coming soon">
-                <i class="bi bi-person-circle"></i>
-                <span>Photo Coming Soon</span>
-              </div>
+            <!-- Replace this placeholder with the speaker's circular photo later -->
+            <div class="speaker-photo-placeholder" role="img" aria-label="Photo of Prof. Bhim Singh coming soon">
+              <i class="bi bi-person-circle"></i>
+              <span>Photo Coming Soon</span>
+            </div>
 
+            <div class="speaker-info">
               <h3>Prof. (Dr.) Bhim Singh</h3>
 
               <p class="speaker-affiliation">
@@ -197,21 +223,21 @@
                 Speaker Details
                 <i class="bi bi-arrow-up-right"></i>
               </a>
-
             </div>
+
           </div>
           <!-- End Speaker 1 -->
 
           <!-- Speaker 2 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="speaker-card">
+          <div class="speaker-row" data-aos="fade-up" data-aos-delay="200">
 
-              <!-- Replace this placeholder with the speaker's photo later -->
-              <div class="speaker-photo-placeholder" role="img" aria-label="Photo of Dr. Anurag Sharma coming soon">
-                <i class="bi bi-person-circle"></i>
-                <span>Photo Coming Soon</span>
-              </div>
+            <!-- Replace this placeholder with the speaker's circular photo later -->
+            <div class="speaker-photo-placeholder" role="img" aria-label="Photo of Dr. Anurag Sharma coming soon">
+              <i class="bi bi-person-circle"></i>
+              <span>Photo Coming Soon</span>
+            </div>
 
+            <div class="speaker-info">
               <h3>Dr. Anurag Sharma</h3>
 
               <p class="speaker-affiliation">
@@ -228,21 +254,21 @@
                 Speaker Details
                 <i class="bi bi-arrow-up-right"></i>
               </a>
-
             </div>
+
           </div>
           <!-- End Speaker 2 -->
 
           <!-- Speaker 3 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="speaker-card">
+          <div class="speaker-row" data-aos="fade-up" data-aos-delay="300">
 
-              <!-- Replace this placeholder with the speaker's photo later -->
-              <div class="speaker-photo-placeholder" role="img" aria-label="Photo of Shurjeel Ghani Lalla coming soon">
-                <i class="bi bi-person-circle"></i>
-                <span>Photo Coming Soon</span>
-              </div>
+            <!-- Replace this placeholder with the speaker's circular photo later -->
+            <div class="speaker-photo-placeholder" role="img" aria-label="Photo of Shurjeel Ghani Lalla coming soon">
+              <i class="bi bi-person-circle"></i>
+              <span>Photo Coming Soon</span>
+            </div>
 
+            <div class="speaker-info">
               <h3>Shurjeel Ghani Lalla</h3>
 
               <p class="speaker-affiliation">
@@ -258,8 +284,8 @@
                 Speaker Details
                 <i class="bi bi-arrow-up-right"></i>
               </a>
-
             </div>
+
           </div>
           <!-- End Speaker 3 -->
 
