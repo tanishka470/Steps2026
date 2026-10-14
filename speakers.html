@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Speakers</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Speakers | STEPS 2026</title>
+  <meta content="Keynote speakers for the STEPS 2026 international conference." name="description">
+  <meta content="STEPS 2026, speakers, keynote speakers, energy systems, power systems" name="keywords">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
@@ -18,7 +18,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,94 +26,275 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  IMRE Singapore
+
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Append
-  * Updated: Jun 20 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .speakers-section {
+      padding-top: 120px;
+      padding-bottom: 80px;
+    }
+
+    .speakers-section .section-title h2 {
+      font-size: clamp(3rem, 8vw, 6.25rem);
+    }
+
+    .speaker-card {
+      height: 100%;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 24px 20px 30px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .speaker-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.14);
+    }
+
+    .speaker-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      border-radius: 8px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #1f4e79, #3b82a0);
+      margin-bottom: 24px;
+    }
+
+    .speaker-photo-placeholder i {
+      font-size: 4rem;
+    }
+
+    .speaker-photo-placeholder span {
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .speaker-card h3 {
+      margin-bottom: 10px;
+      color: #222222;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+    }
+
+    .speaker-card .speaker-affiliation {
+      min-height: 58px;
+      margin-bottom: 20px;
+      color: #555555;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .speaker-details-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--color-primary, #0d6efd);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .speaker-details-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 767px) {
+      .speakers-section {
+        padding-top: 100px;
+      }
+
+      .speaker-card {
+        padding: 20px 16px 26px;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
-      <div class="container-fluid d-flex align-items-center justify-content-between">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-          <img src="assets/img/Picture%202.jpg" alt="NIT Srinagar Logo" class="nav-logo nav-logo-nit">
-          <h1>STEPS 2026</h1>
-        </a>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/Picture%202.jpg" alt="NIT Srinagar Logo" class="nav-logo nav-logo-nit">
+        <h1>STEPS 2026</h1>
+      </a>
 
-        <!-- Nav Menu -->
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="photos.html">Photos</a></li>
-            <li><a href="committee.html">Committee</a></li>
-            <li><a href="speakers.html" class="active">Speakers</a></li>
-            <li><a href="call_for_paper.html">Call For Paper</a></li>
-            <li><a href="previousedition.html">Previous Editions</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="d-none d-xl-flex align-items-center ms-2">
-              <img src="assets/img/Picture%201.jpg" alt="IEEE STEPS Logo" class="nav-logo nav-logo-ieee">
-            </li>
-          </ul>
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="committee.html">Committee</a></li>
+          <li><a href="speakers.html" class="active">Speakers</a></li>
+          <li><a href="call_for_paper.html">Call For Paper</a></li>
+          <li><a href="previousedition.html">Previous Editions</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="d-none d-xl-flex align-items-center ms-2">
+            <img src="assets/img/Picture%201.jpg" alt="IEEE STEPS Logo" class="nav-logo nav-logo-ieee">
+          </li>
+        </ul>
 
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav><!-- End Nav Menu -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <!-- End Nav Menu -->
 
-        <span></span>
-      </div>
-    </header><!-- End Header -->
+      <span></span>
+    </div>
+  </header>
+  <!-- End Header -->
 
   <main id="main">
 
-    <section id="team" class="team">
-      <!--  Section Title -->
-      <div class="container section-title  mt-5" data-aos="fade-up">
-        <h2 style="font-size:100px">Speakers</h2>
-      </div><!-- End Section Title -->
+    <!-- ======= Speakers Section ======= -->
+    <section id="team" class="team speakers-section">
+
+      <div class="container section-title text-center" data-aos="fade-up">
+        <h2>Speakers</h2>
+        <p>Meet the distinguished speakers joining STEPS 2026.</p>
+      </div>
 
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center" style="padding:80px 0;" data-aos="fade-up">
-                <h3 style="font-size:2rem; font-weight:600; color: var(--color-primary);">To Be Announced Soon</h3>
+        <div class="row gy-5 justify-content-center">
+
+          <!-- Speaker 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="speaker-card">
+
+              <!-- Replace this placeholder with the speaker's photo later -->
+              <div class="speaker-photo-placeholder" role="img" aria-label="Photo of Prof. Bhim Singh coming soon">
+                <i class="bi bi-person-circle"></i>
+                <span>Photo Coming Soon</span>
+              </div>
+
+              <h3>Prof. (Dr.) Bhim Singh</h3>
+
+              <p class="speaker-affiliation">
+                ANRF National Science Chair &amp; Emeritus Professor<br>
+                Department of Electrical Engineering<br>
+                Indian Institute of Technology Delhi
+              </p>
+
+              <a
+                class="speaker-details-link"
+                href="https://web.iitd.ac.in/~bsingh/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Speaker Details
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+
+            </div>
           </div>
+          <!-- End Speaker 1 -->
+
+          <!-- Speaker 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="speaker-card">
+
+              <!-- Replace this placeholder with the speaker's photo later -->
+              <div class="speaker-photo-placeholder" role="img" aria-label="Photo of Dr. Anurag Sharma coming soon">
+                <i class="bi bi-person-circle"></i>
+                <span>Photo Coming Soon</span>
+              </div>
+
+              <h3>Dr. Anurag Sharma</h3>
+
+              <p class="speaker-affiliation">
+                Director of Postgraduate Research and Associate Professor<br>
+                Electrical Power Engineering<br>
+                Newcastle University in Singapore
+              </p>
+
+              <a
+                class="speaker-details-link"
+                href="https://www.ncl.ac.uk/singapore/staff/profile/anuragsharma.html"
+                target="_blank"
+                rel="noopener noreferrer">
+                Speaker Details
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+
+            </div>
+          </div>
+          <!-- End Speaker 2 -->
+
+          <!-- Speaker 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="speaker-card">
+
+              <!-- Replace this placeholder with the speaker's photo later -->
+              <div class="speaker-photo-placeholder" role="img" aria-label="Photo of Shurjeel Ghani Lalla coming soon">
+                <i class="bi bi-person-circle"></i>
+                <span>Photo Coming Soon</span>
+              </div>
+
+              <h3>Shurjeel Ghani Lalla</h3>
+
+              <p class="speaker-affiliation">
+                Secretary (Technical)<br>
+                Jammu and Kashmir Power Development Department
+              </p>
+
+              <a
+                class="speaker-details-link"
+                href="https://www.linkedin.com/in/shurjeel-ghani-6a863510/?isSelfProfile=false"
+                target="_blank"
+                rel="noopener noreferrer">
+                Speaker Details
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+
+            </div>
+          </div>
+          <!-- End Speaker 3 -->
+
         </div>
       </div>
 
-  </section><!-- End Team Section -->
+    </section>
+    <!-- End Speakers Section -->
 
   </main>
 
+  <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
     <div class="container footer-top">
       <div class="row gy-4">
+
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <span>STEPS 2026</span>
           </a>
-          <p style="justify-content:center" >
-          The International Conference on Sustainable Technologies for Energy and Power Systems (STEPS 2026) 
-		  is an exceptional gathering of minds dedicated to advancing the field of power and energy systems. 
-		  With a diverse program featuring keynote speeches, technical paper presentations, panel discussions, and workshops, 
-          STEPS 2026  covers a wide spectrum of topics ranging from renewable energy integration to cyber security 
-		  in energy systems.
-	  </p>
+
+          <p style="text-align: justify;">
+            The International Conference on Sustainable Technologies for Energy and Power Systems
+            (STEPS 2026) is an exceptional gathering of minds dedicated to advancing the field of
+            power and energy systems. With a diverse program featuring keynote speeches, technical
+            paper presentations, panel discussions, and workshops, STEPS 2026 covers a wide spectrum
+            of topics ranging from renewable energy integration to cyber security in energy systems.
+          </p>
+
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -121,40 +302,46 @@
           <h4>Useful Links</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="committee.html">Committee</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4 style="opacity: 0;">.</h4>
+          <h4 style="opacity: 0;">Useful Links</h4>
           <ul>
             <li><a href="call_for_paper.html">Call For Paper</a></li>
-            <!-- <li><a href="venue.html">Venue</a></li>
-            <li><a href="accommodation.html">Accommodation</a></li> -->
+            <li><a href="speakers.html">Speakers</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-	  <p>Department of Electrical Engineering</p>
-          <p>National Institute Of Technology Srinagar</p>
+          <p>Department of Electrical Engineering</p>
+          <p>National Institute of Technology Srinagar</p>
           <p>Hazratbal Srinagar</p>
           <p>Jammu and Kashmir</p>
-          <p class="mt-4"><strong>Phone:</strong> <span> +91 6005352412 </span></p>
-          <p><strong>Email:</strong> <span>ieeesteps2026@gmail.com </span></p>
+          <p class="mt-4">
+            <strong>Phone:</strong>
+            <span>+91 6005352412</span>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <span>ieeesteps2026@gmail.com</span>
+          </p>
         </div>
 
       </div>
     </div>
 
- 
-
- </footer><!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
   <!-- Scroll Top Button -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader">
